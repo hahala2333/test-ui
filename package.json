@@ -10,8 +10,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@vitejs/plugin-vue": "^5.0.4",
     "less": "^4.2.0",
     "typescript": "^5.4.5",
+    "unplugin-vue-define-options": "^1.4.5",
+    "vite": "^5.2.0",
     "vue": "3.4.27"
+  },
+  "dependencies": {
+    "@test-ui/utils": "workspace:^"
   }
 }

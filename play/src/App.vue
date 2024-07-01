@@ -1,7 +1,5 @@
-<script setup lang="ts">
-import { Button } from "@test-ui/components";
-</script>
-
 <template>
-  <Button />
+  <test-button>测试按钮</test-button>
 </template>
+
+<script setup lang="ts"></script>
