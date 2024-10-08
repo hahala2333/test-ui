@@ -1,6 +1,7 @@
 // vite.config.ts
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import dts from "vite-plugin-dts";
 import DefineOptions from 'unplugin-vue-define-options/vite';
 import { resolve } from 'path';
 
@@ -42,6 +43,12 @@ export default defineConfig({
       },
     plugins: [
         vue(),
+        dts({
+          entryRoot: "./src",
+          outputDir: ["../testUI/es/src", "../testUI/lib/src"],
+          //指定使用的tsconfig.json为我们整个项目根目录下,如果不配置,你也可以在components下新建tsconfig.json
+          tsConfigFilePath: "../../tsconfig.json",
+        }),
         DefineOptions(), // 添加 DefineOptions 插件
       ],
 });

@@ -6,6 +6,8 @@
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "strict": true,
+    "types": ["@test-ui/components"]
   },
+  
   "include": ["vite.config.ts"]
 }
