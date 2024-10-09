@@ -1,5 +1,5 @@
 <template>
-  <button><slot></slot></button>
+  <button><slot>默认内容</slot></button>
 </template>
 
 <script lang="ts" setup>

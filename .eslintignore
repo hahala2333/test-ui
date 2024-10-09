@@ -1,0 +1,4 @@
+**.d.ts
+/packages/testUI
+dist
+node_modules
