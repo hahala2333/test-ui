@@ -15,6 +15,7 @@
     "@test-ui/utils": "workspace:^1.0.0"
   },
   "devDependencies": {
-    "@vitest/coverage-v8": "^2.1.2"
+    "@vitest/coverage-v8": "^2.1.2",
+    "semver": "^7.6.3"
   }
 }

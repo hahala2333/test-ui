@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@test-ui/components": "workspace:^",
-    "test-ui": "workspace:^",
     "vue": "^3.4.21"
   },
   "devDependencies": {

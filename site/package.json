@@ -16,6 +16,7 @@
     "vue": "^3.5.11"
   },
   "dependencies": {
-    "@test-ui/components": "workspace:^"
+    "@test-ui/components": "workspace:^",
+    "test-ui": "workspace:*"
   }
 }

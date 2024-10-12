@@ -10,7 +10,6 @@ export default async (command: string, path: string) => {
       shell: true, //mac不需要开启，windows下git base需要开启支持
     });
     //执行完毕关闭并resolve
-    console.log('=====close===')
     app.on("close", resolve);
   });
 };
