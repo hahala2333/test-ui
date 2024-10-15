@@ -1,4 +1,4 @@
-import { withInstall } from "@test-ui/utils";
+import { withInstall } from "../../utils";
 import _Button from "./index.vue";
 
 

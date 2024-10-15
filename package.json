@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:testUI": "gulp -f packages/components/script/build/index.ts & pnpm run --filter ./packages/utils build",
-    "publish:custom": "dotenv pnpm login --registry=http://your-private-registry-url/ && pnpm publish packages/testUI --registry=http://your-private-registry-url/"
+    "build:testUI": "gulp -f packages/components/script/build/index.ts",
+    "publish:testUI": "pnpm login --registry=http://10.5.1.253:4873/ && pnpm publish packages/testUI --registry=http://10.5.1.253:4873/ --no-git-checks"
   },
   "keywords": [],
   "author": "",
@@ -37,8 +37,5 @@
     "vite-plugin-dts": "1.4.1",
     "vitest": "^2.1.2",
     "vue": "3.4.27"
-  },
-  "dependencies": {
-    "@test-ui/utils": "workspace:^"
   }
 }

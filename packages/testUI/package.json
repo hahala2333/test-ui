@@ -1,0 +1,22 @@
+{
+  "name": "test-ui",
+  "version": "1.0.41",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "files": [
+    "es",
+    "lib",
+    "package.json"
+  ],
+  "keywords": [
+    "testUI",
+    "vue3组件库"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "author": "haha",
+  "license": "ISC",
+  "description": "",
+  "typings": "lib/index.d.ts"
+}

@@ -1,6 +1,6 @@
 {
   "name": "@test-ui/components",
-  "version": "1.0.0",
+  "version": "1.0.41",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,12 +9,10 @@
     "coverage": "vitest run --coverage"
   },
   "keywords": [],
-  "author": "",
+  "author": "haha",
   "license": "ISC",
-  "dependencies": {
-    "@test-ui/utils": "workspace:^1.0.0"
-  },
   "devDependencies": {
+    "@types/semver": "^7.5.8",
     "@vitest/coverage-v8": "^2.1.2",
     "semver": "^7.6.3"
   }
