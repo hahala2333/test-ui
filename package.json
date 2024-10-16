@@ -37,5 +37,8 @@
     "vite-plugin-dts": "1.4.1",
     "vitest": "^2.1.2",
     "vue": "3.4.27"
+  },
+  "dependencies": {
+    "element-plus": "^2.8.5"
   }
 }

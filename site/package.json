@@ -12,10 +12,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "sass-embedded": "^1.79.5",
     "vitepress": "^1.4.0",
     "vue": "^3.5.11"
   },
   "dependencies": {
-    "test-ui": "^1.0.41"
+    "test-ui": "^1.0.65"
   }
 }
