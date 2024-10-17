@@ -1,6 +1,6 @@
 {
   "name": "@test-ui/components",
-  "version": "1.0.65",
+  "version": "1.0.105",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,12 +12,12 @@
   "author": "haha",
   "license": "ISC",
   "devDependencies": {
-    "@types/rollup-plugin-peer-deps-external": "^2.2.5",
     "@types/semver": "^7.5.8",
     "@vitest/coverage-v8": "^2.1.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "semver": "^7.6.3",
-    "unplugin-element-plus": "^0.8.0"
+    "unplugin-element-plus": "^0.8.0",
+    "vite-plugin-externalize-deps": "^0.8.0"
   },
   "peerDependencies": {
     "element-plus": "^2.8.5"

@@ -7,8 +7,8 @@ import { resolve } from 'path';
 import { writeFileSync, readFileSync, existsSync, mkdirSync   } from 'fs';
 import path from 'path';
 import semver from 'semver';
-import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-// import ElementPlus from 'unplugin-element-plus/vite'
+const { externalizeDeps } = require('vite-plugin-externalize-deps');
+import ElementPlus from 'unplugin-element-plus/vite'
 
 export default defineConfig({
   test: {
@@ -18,7 +18,7 @@ export default defineConfig({
       outDir: "es",
         rollupOptions: {
           // 确保外部化处理那些你不想打包进库的依赖
-          external: ['vue', /\.less/, 'element-plus', /\.scss/],
+          external: ['vue', /\.less/, 'element-plus', /\.scss/, 'element-plus/dist/index.css'],
           input: ['index.ts'],
           output: [
             {
@@ -46,9 +46,7 @@ export default defineConfig({
               
             },
           ],
-          plugins: [
-            peerDepsExternal(), // 添加该插件确保 peerDependencies 不会被打包
-          ],
+        
         },
         lib: {
           entry: resolve(__dirname, 'index.ts'),  // 你的入口文件路径
@@ -58,7 +56,8 @@ export default defineConfig({
     plugins: [
         vue(),
         DefineOptions(), // 添加 DefineOptions 插件
-        // ElementPlus({useSource: true}),
+        externalizeDeps(),  // 使用专为 Vite 设计的插件来外部化依赖
+        ElementPlus({useSource: true}),
         dts({
           entryRoot: "./src",
           outputDir: ["../testUI/es/src", "../testUI/lib/src"],
