@@ -1,6 +1,6 @@
 {
   "name": "test-ui",
-  "version": "1.0.109",
+  "version": "1.0.112",
   "main": "lib/index.js",
   "module": "es/index.mjs",
   "files": [
